@@ -1,0 +1,16 @@
+Project Description
+Title: Raghavendra Personal Portfolio Website
+This project is a personal portfolio website designed to showcase my skills, projects, and professional experiences. The website is built using HTML, CSS, and JavaScript for the frontend, and Node.js for the backend.
+
+Frontend
+The frontend of the website is designed with HTML, CSS, and JavaScript. It is structured to provide an intuitive user interface, with easy navigation between different sections of the portfolio. The design is responsive, ensuring a seamless experience across various devices and screen sizes.
+
+Backend
+The backend of the website is powered by Node.js. It is primarily used for the contact page, which includes a feature to trigger an email to the client with my resume attached. This allows potential employers or collaborators to easily get in touch and access my resume directly from the website.
+
+Customization Features
+One of the unique features of this portfolio website is the ability for viewers to customize the appearance according to their preference. This includes options to change the border color, background color, and font color. This feature not only enhances the user experience but also adds a personal touch to the interaction with the portfolio.
+
+This portfolio website serves as a comprehensive platform to highlight my skills and experiences, while also providing a personalized and interactive experience for the viewers. It is a testament to my proficiency in frontend and backend web development, and my commitment to creating user-friendly digital experiences.
+
+

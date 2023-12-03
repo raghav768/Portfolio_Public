@@ -35,6 +35,7 @@ const app = express();
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'build')));
 
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -42,6 +43,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Parse JSON bodies (as sent by API clients)
 app.use(bodyParser.json());
 
+app.get('/weather', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 // Use express session support
 app.use(session({
   secret: process.env.SESSION_SECRET,

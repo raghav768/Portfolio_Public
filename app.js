@@ -128,7 +128,7 @@ app.post('/sendEmail', async function (req, res) {
             attachments: [
                 {
                     filename: 'file.pdf',
-                    path: "./assets/Resume/Sri's Resume.pdf"
+                    path: "./assets/Resume/Raghavendra_Frontend_Resume.pdf"
                 }
             ]
         };

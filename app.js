@@ -134,7 +134,7 @@ app.post('/sendEmail', async function (req, res) {
     const data = {
       ...req.body,
       timestamp: new Date(),
-      ip: req.headers['x-real-ip'] || req.socket.remoteAddress
+      ip: req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.socket.remoteAddress
     };
 
     const result = await collection.insertOne(data);

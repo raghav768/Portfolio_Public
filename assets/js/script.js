@@ -344,7 +344,7 @@ window.onload = function() {
 fetch('/api/visit')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('visit-count').innerText = 'Visiters Count: ' + data.total;
+      document.getElementById('visit-count').innerText = 'Visitors Count: ' + data.total;
     })
     .catch(err => {
       console.error('Error fetching visits:', err);

@@ -8,8 +8,6 @@ require('dotenv').config();
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = process.env.MONGO_URI;
-// TRUST PROXY so Express looks at x-forwarded-for
-app.set('trust proxy', true);
 
 // Initialize MongoDB client
 const client = new MongoClient(uri, {
@@ -37,6 +35,8 @@ async function connectDB() {
 
 // Initialize Express
 const app = express();
+// TRUST PROXY so Express looks at x-forwarded-for
+app.set('trust proxy', true);
 app.use(express.static(path.join(__dirname)));
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.urlencoded({ extended: true }));

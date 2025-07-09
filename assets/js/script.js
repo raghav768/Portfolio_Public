@@ -339,3 +339,14 @@ window.onload = function() {
   document.getElementById('buttonColorl').value = rgbToHex(window.getComputedStyle(document.getElementById('settingsButton')).getPropertyValue('background-color'));
   modal.style.display = "block";
 }
+
+
+fetch('/api/visit')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visit-count').innerText = 'Visitors Count: ' + data.total;
+    })
+    .catch(err => {
+      console.error('Error fetching visits:', err);
+      document.getElementById('visit-count').innerText = 'Visitors Count: N/A';
+    });
